@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@namespace "http://www.w3.org/1999/xhtml";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanssc.css");
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjp.css");
+
+
+div
+{
+	display: block;
+}
+
+
+
+
+
+
+body
+{
+	margin: 0px;
+	padding: 10pt;
+}
+
+
+
+
+.list_none ol, #toc ol ol
+{
+	margin-left: auto;
+	padding-left: 1em;
+}
+
+
+
+
+
+body[lang*=zh], html[lang*=zh], section[lang*=zh]
+{
+	
+
+	/*-webkit-text-stroke: 0.6px;*/
+	/*-webkit-text-stroke: 0.4px;*/
+
+}
+
+body
+{
+	padding: 0;
+}
+
+[epub-type*="cover"], .ImageContainer
+{
+	padding: 0;
+}
+
+[epub|type*='bodymatter']
+{
+	padding: 0.5em 1em;
+}
+
+body[epub-type*='bodymatter']
+{
+	padding: 0.5em 1em;
+}
+
+body[epub-type*='frontmatter']
+{
+	padding: 0;
+}
+
+section
+{
+	padding: 0.5em 1.5em 0.5em 1em;
+}
+
+section[epub-type*="chapter"]
+{
+	padding: 0.5em 1.5em 0.5em 1em;
+}
+
+body[epub-type*='frontmatter'] section
+{
+	padding: 10px;
+}
+
+section[lang*=zh] p
+{ min-height: 1.6em; }
+
+nav, .toc
+{
+	margin: auto;
+	padding: 0;
+}
+
+div, p
+{
+	margin: auto;
+	padding: 0px;
+}
+
+.divimage
+{
+	page-break-after: always;
+}
+
+.cover
+{
+	width: 100%;
+	padding: 0px;
+}
+
+.center
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left
+{
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right
+{
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-align: justify;
+}
+
+.hidden
+{
+	display: none;
+}
+
+h1
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+h2
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+h3
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+}
+
+h4
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: medium;
+}
+
+h5
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: small;
+}
+
+h6
+{
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	font-size: x-small;
+}
+
+.vertical-container
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.fullpage
+{
+	height: 100%;
+}
+
+figure
+{
+	margin-before: 0;
+	margin-after: 0;
+	margin-start: 0;
+	margin-end: 0;
+}
+
+figure.fullpage
+{
+	max-height: 90%;
+	height: 90%;
+	margin: 0;
+	padding: 0;
+	display: block;
+
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+figure:before
+{ content: ''; display: inline-block; vertical-align: middle; height: 100%; }
+
+figure img
+{
+	max-height: 95%;
+	margin: auto;
+	padding: 0;
+}
+
+hr, .linehr
+{
+	border: none;
+	border: 0px none currentcolor;
+	border-bottom: 0.2em dashed currentcolor;
+	border-bottom: 0.2em solid currentcolor;
+
+	margin: 0.5em auto;
+	opacity: 0.7;
+
+	text-align: center;
+}
+
+.linehr-double
+{
+	border-bottom: 0.3em double currentcolor;
+}
+
+p.linegroup, .calibre1, .softbreak
+{ display: block; }
+
+.linegroup, p, .softbreak, .calibre1
+{ margin: auto; }
+
+.linegroup:before, p:before, .calibre1:before, .softbreak:before
+{ content: ''; display: inline-block; }
+
+#toc li, #toc ol, #toc ul
+{
+	text-align: left;
+}
+
+.page-break-before
+{
+	page-break-before:always;
+}
+
+.page-break-after
+{
+	page-break-after: always;
+}
+
+.page-break-all
+{
+	page-break-before:always;
+	page-break-after: always;
+}
+
+header h2
+{
+	margin-top: 0.1em;
+	margin-before: 0.1em;
+	-webkit-margin-before: 0.1em;
+}
+
+.chapter-header-001
+{
+	padding-bottom: 0.1em;
+}
+
+.chapter-header-001 > h2
+{
+	text-align: left;
+	padding-bottom: 0.1em;
+	border-bottom: 0.1em solid #000;
+	border-bottom: 0.1em solid currentColor;
+	margin-after: 0.3em;
+	margin-bottom: 0.3em;
+	-webkit-margin-after: 0.3em;
+	font-size: large;
+}
+
+.state-indicator:before { content: ' desktop '; }
+
+.overflow-line
+{
+	overflow: hidden;
+	max-width: 99%;
+	white-space: nowrap;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+script {
+	display: none;
+}
+
